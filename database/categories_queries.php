@@ -9,6 +9,7 @@ function getQuestionByCategoryId(PDO $db, int $categoryId): array
             q.author_id,
             u.username,
             c.name,
+            c.id,
             q.created_on,
             COUNT(a.id) AS answers_count
          FROM forum.questions AS q 
@@ -25,6 +26,7 @@ function getQuestionByCategoryId(PDO $db, int $categoryId): array
             q.author_id,
             u.username,
             c.name,
+            c.id,
             q.created_on
          ORDER BY
             q.created_on DESC, 

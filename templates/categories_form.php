@@ -1,5 +1,4 @@
-
-
+<h1>Categories</h1>
 
 
 <table border="2">
